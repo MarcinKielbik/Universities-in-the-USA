@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Universities in the USA</h1>
+    <h3>{{(data)?.length}} universities!</h3>
+    <ol>
+        <li *ngFor="let item of data">
+        <div>Name: {{item.name}}</div>
+        <div>Website: <a href="{{item.web_pages}}" target="_blank">{{item.web_pages}}</a></div>
+        </li>
+    </ol>
+</div>
